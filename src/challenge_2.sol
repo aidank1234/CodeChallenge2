@@ -19,7 +19,7 @@ contract Lottery is Ownable, ReentrancyGuard {
     event LotteryEntry(address player, uint256 amount);
     event LotteryWinner(address winner, uint256 amount);
 
-    constructor(uint256 _duration) {
+    constructor(address initialOwner, uint256 _duration) Ownable(initialOwner) {
         lotteryEndTime = block.timestamp + _duration;
         lotteryOpen = true;
     }
