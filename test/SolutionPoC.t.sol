@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "../src/challenge_2.sol";
+import {Lottery} from "../src/challenge_2.sol";
 
 interface ILottery {
     function enterLottery() external payable;
