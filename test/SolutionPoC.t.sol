@@ -29,7 +29,7 @@ contract LotteryTest is Test {
     MaliciousContract attacker;
 
     function setUp() public {
-        lottery = new Lottery(1 days);
+        lottery = new Lottery(address(this), 1 days);
         attacker = new MaliciousContract(address(lottery));
     }
 
