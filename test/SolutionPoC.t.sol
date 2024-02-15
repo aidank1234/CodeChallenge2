@@ -25,7 +25,7 @@ contract MaliciousContract {
 }
 
 contract LotteryTest is Test {
-    LotteryTest lottery;
+    Lottery lottery;
     MaliciousContract attacker;
 
     function setUp() public {
